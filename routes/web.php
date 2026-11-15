@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -15,6 +16,11 @@ Route::get('/dashboard', function () {
 Route::get('/plants', function () {
     return view('plants');
 })->middleware(['auth', 'verified'])->name('plants');
+
+Route::get('/organizations', function () {
+    return view('organizations');
+})->middleware(['auth', 'verified'])->name('organizations');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
