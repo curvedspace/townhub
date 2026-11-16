@@ -2,6 +2,11 @@
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Organizations') }} - find local businesses, non-profits and clubs.
+
+               <button type="button" class="text-white bg-brand box-border border hover:bg-brand-strong 
+               focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 
+               ml-8 focus:outline-none">Create</button>
+
         </h2>
     </x-slot>
 
@@ -25,6 +30,8 @@
                                     {{ $organizationType->name }}
                                 </a>
                             </li>
+
+                            
                         @endforeach
                         
                         
