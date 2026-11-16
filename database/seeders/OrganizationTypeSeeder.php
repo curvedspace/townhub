@@ -14,9 +14,9 @@ class OrganizationTypeSeeder extends Seeder
     public function run(): void
     {
         $orgTypes = [
-            'Business',
-            'Non-Profit',
-            'Club',
+            'Businesses',
+            'Non-Profits',
+            'Clubs',
             'Other'
         ];
 
