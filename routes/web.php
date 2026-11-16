@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrganizationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,9 +18,14 @@ Route::get('/plants', function () {
     return view('plants');
 })->middleware(['auth', 'verified'])->name('plants');
 
-Route::get('/organizations', function () {
-    return view('organizations');
-})->middleware(['auth', 'verified'])->name('organizations');
+// Route::get('/organizations', function () {
+//     return view('organizations');
+// }
+// )->middleware(['auth', 'verified'])->name('organizations');
+
+
+Route::get('/organizations', [OrganizationController::class, 'show']
+)->middleware(['auth', 'verified'])->name('organizations');
 
 
 Route::middleware('auth')->group(function () {
