@@ -22,6 +22,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        // seed the org types data
+        $this->call([
+            OrganizationTypeSeeder::class,
+        ]);
+
         // seed the plants data
         $this->call([
             PlantSeeder::class,
