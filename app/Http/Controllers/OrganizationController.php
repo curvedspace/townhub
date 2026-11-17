@@ -9,7 +9,7 @@ use Illuminate\View\View;
 
 class OrganizationController extends Controller
 {
-    public function show() 
+    public function index() 
     {
         $organizationTypes = OrganizationType::get();
         $organizations = Organization::get();
@@ -17,4 +17,10 @@ class OrganizationController extends Controller
         return view('organizations', compact('organizationTypes', 'organizations'));
     }
 
+    public function show (Organization $organization)
+    {
+        return view('organizations.show', [
+            'organization' => $organization,
+        ]);
+    }
 }

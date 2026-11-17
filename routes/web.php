@@ -18,13 +18,11 @@ Route::get('/plants', function () {
     return view('plants');
 })->middleware(['auth', 'verified'])->name('plants');
 
-// Route::get('/organizations', function () {
-//     return view('organizations');
-// }
-// )->middleware(['auth', 'verified'])->name('organizations');
+Route::get('/orgs/{organization:id}', [OrganizationController::class, 'show'])
+    ->name('organizations.show');
 
 
-Route::get('/organizations', [OrganizationController::class, 'show']
+Route::get('/organizations', [OrganizationController::class, 'index']
 )->middleware(['auth', 'verified'])->name('organizations');
 
 
