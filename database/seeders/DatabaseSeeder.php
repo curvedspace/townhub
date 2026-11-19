@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 
 use App\Models\User;
+use App\Models\Region;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,6 +22,12 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+        ]);
+
+        Region::factory()->create([
+            'country' => 'Canada',
+            'stateprovince' => 'Nova Scotia',
+            'name' => 'St. Margarets Bay'
         ]);
 
         // seed the org types data
