@@ -14,7 +14,7 @@ class OrganizationController extends Controller
         $organizationTypes = OrganizationType::get();
         $organizations = Organization::get();
 
-        return view('organizations', compact('organizationTypes', 'organizations'));
+        return view('organizations.index', compact('organizationTypes', 'organizations'));
     }
 
     public function show (Organization $organization)
