@@ -23,4 +23,12 @@ class OrganizationController extends Controller
             'organization' => $organization,
         ]);
     }
+
+    public function create() 
+    {
+        $organizationTypes = OrganizationType::get();
+    
+
+        return view('organizations.create', compact('organizationTypes'));
+    }
 }

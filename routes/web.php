@@ -18,7 +18,7 @@ Route::get('/plants', function () {
     return view('plants');
 })->middleware(['auth', 'verified'])->name('plants');
 
-Route::get('/orgs/create', [OrganizationController::class, 'create'])
+Route::get('/organizations/create', [OrganizationController::class, 'create'])
     ->name('organizations.create');
 
 Route::get('/orgs/{organization:id}', [OrganizationController::class, 'show'])
