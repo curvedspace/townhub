@@ -43,10 +43,11 @@
             </div>
         </div>
 
+        <div class ="card-grid">
 
         @foreach ($organizations as $organization)                 
 
-            <div class="text-gray-900 dark:text-gray-100 mt-8 mx-auto bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+            <div class="card text-gray-900 dark:text-gray-100 mt-8 mx-auto bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
                 
                 <a href="#">
                     <img class="rounded-base" src="/docs/images/blog/image-1.jpg" alt="" />
@@ -66,6 +67,8 @@
 
 
         @endforeach
+
+        </div>
 
     </div>
 </x-app-layout>
