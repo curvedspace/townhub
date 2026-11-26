@@ -43,11 +43,11 @@
             </div>
         </div>
 
-        <div class ="card-grid">
+        <div class ="flex flex-wrap gap-4 p-4">
 
         @foreach ($organizations as $organization)                 
 
-            <div class="card text-gray-900 dark:text-gray-100 mt-8 mx-auto bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+            <div class="flex-1 min-w-[250px] text-gray-900 dark:text-gray-100 mt-8 mx-auto bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
                 
                 <a href="#">
                     <img class="rounded-base" src="/docs/images/blog/image-1.jpg" alt="" />
