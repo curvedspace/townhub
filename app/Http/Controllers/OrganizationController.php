@@ -31,4 +31,12 @@ class OrganizationController extends Controller
 
         return view('organizations.create', compact('organizationTypes'));
     }
+
+    public function store(Request $request) 
+    {
+    
+        dd(request()->all());
+
+        return view('organizations.create', compact('organization'));
+    }
 }

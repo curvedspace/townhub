@@ -6,7 +6,7 @@
 
             <a href="{{ route('organizations.create') }}" 
             class="ml-10 inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading 
-            focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+            focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none sm-flex sm-justify-between">
             Register Yours</a>
 
                {{-- <button onclick="org.create='{{ route('organizations.create') }}'" type="button" class="text-white bg-brand box-border border hover:bg-brand-strong 
