@@ -16,6 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('status');
+            $table->string('placard')->nullable();
+            $table->string('website')->nullable();
+            $table->string('email')->nullable();
+            $table->foreignId('user_id')->nullable()->index();
             $table->timestamps();
         });
     }
