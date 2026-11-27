@@ -14,11 +14,24 @@
 
   <div class="mb-5">
     <label for="status" class="block mt-10 mb-2.5 text-sm font-medium text-heading text-gray-100">Organization status</label>
-    <input name="status" type="text" id="status" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Public" required />
+    <input name="status" type="text" id="status" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Public" value="Public" required />
+  </div>
+
+  <div class="mb-5">
+    <label for="website" class="block mt-10 mb-2.5 text-sm font-medium text-heading text-gray-100">Website</label>
+    <input name="website" type="text" id="website" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="https://example.com" />
+  </div>
+
+  <div class="mb-5">
+    <label for="email" class="block mt-10 mb-2.5 text-sm font-medium text-heading text-gray-100">Email</label>
+    <input name="email" type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="your-email@example.com" />
   </div>
   
   <label for="description" class="block mb-2.5 text-sm font-medium text-heading text-gray-100">Organization description</label>
   <textarea name="description" id="description" rows="4" class="mb-10 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-3.5 shadow-xs placeholder:text-body" placeholder="Write description here..."></textarea>
+
+  <label for="placard" class="block mb-2.5 text-sm font-medium text-heading text-gray-100">Organization placard</label>
+  <textarea name="placard" id="placard" rows="4" class="mb-10 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-3.5 shadow-xs placeholder:text-body" placeholder="Write placard here...(what is happening with your organization)"></textarea>
 
   <label for="remember" class="flex items-center mb-5">
     <input name="remember" id="remember" type="checkbox" value="" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />

@@ -37,7 +37,12 @@ Route::post('/organizations/store', function () {
         'name' => 'required|string|max:255',
         'status' => 'required|string|max:255',
         'description' => 'nullable|string',
+        'placard' => 'nullable|string',
+        'website' => 'nullable|url|max:255',
+        'email' => 'nullable|email|max:255'
     ]);
+
+    $data['user_id'] = auth()->id(); // Associate the organization with the authenticated user
 
     //dd($data); // Debugging: Dump the validated data
 
